@@ -294,7 +294,7 @@ const loadDataFromLocalstorage = () => {
   const _0x22a2bf = localStorage.getItem('themeColor');
   document.body.classList.toggle('light-mode', _0x22a2bf === 'light_mode');
   themeButton.innerText = document.body.classList.contains('light-mode') ? 'dark_mode' : 'light_mode';
-  chatContainer.innerHTML = localStorage.getItem('all-chats') || "<div class=\"default-text\">\n                            <h1>ChatGPT Clone</h1>\n                            <p>ChatGPT Created by Vanz<br> Your chat history will be displayed here.</p>\n                      <a href=\"https://api-vanzdev.vercel.app/api/xynz-gpt?query=siapakah vanz itu?\" style=\"color:hsl(0,0%,85.7%)\">API for Developers (Free)</a> </div>";
+  chatContainer.innerHTML = localStorage.getItem('all-chats') || "<div class=\"default-text\">\n                            <h1>ChatGPT Clone</h1>\n                            <p>ChatGPT Created by farisofc<br> Your chat history will be displayed here.</p>\n                      <a href=\"https://api-vanzdev.vercel.app/api/xynz-gpt?query=siapakah Faris itu?\" style=\"color:hsl(0,0%,85.7%)\">API for Developers (Free)</a> </div>";
   chatContainer.scrollTo(0, chatContainer.scrollHeight);
 };
 const createChatElement = (_0x20c705, _0x8e5a7f) => {
