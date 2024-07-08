@@ -23,7 +23,7 @@
    
         <ul class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
-                <img src="https://telegra.ph/file/5af0d4cea12f4601e77f0.jpg class="rounded-circle shadow-4"style="width: 50px;" alt="Avatar" />
+                <img src="https://telegra.ph/file/5af0d4cea12f4601e77f0.jpg" class="rounded-circle shadow-4"style="width: 50px;" alt="Avatar" />
                 <div class="sidebar-brand-text mx-3">Farisoffc Slebew</div>
             </a>
             <hr class="sidebar-divider my-0">
@@ -73,20 +73,11 @@
                         <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseRandom" aria-expanded="true" aria-controls="collapseTable">
                   <i class="fa fa-camera"></i>
-                    <span>Random</span>
+                    <span>Search</span>
                 </a>
                 <div id="collapseRandom" class="collapse" aria-labelledby="headingTable" data-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-            <a class="collapse-item" target="_blank" href="api/random/nekopoi">Nekopoi</a>
-            <a class="collapse-item" target="_blank" href="api/random/anime">Anime</a>
-            <a class="collapse-item" target="_blank" href="api/random/nsfw">NSFW</a>
-            <a class="collapse-item" target="_blank" href="api/random/husbu">Husbu</a>
-            <a class="collapse-item" target="_blank" href="api/random/waifu">Waifu</a>
-            <a class="collapse-item" target="_blank" href="api/random/quotes-anime">Katanime</a>
-            <a class="collapse-item" target="_blank" href="api/random/hentai">Hentai</a>
-            <a class="collapse-item" target="_blank" href="api/random/neko">Nekonime</a>
-            <a class="collapse-item" target="_blank" href="api/random/cosplay">Cosplayer</a>
-            <a class="collapse-item" target="_blank" href="api/random/icon">Icon Anime</a>
+            <a class="collapse-item" target="_blank" href="search/tiktoksearch?url=">Tiktok search</a>
 </div>
                 </div>
                           </li>
@@ -104,7 +95,7 @@
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="https://telegra.ph/file/5af0d4cea12f4601e77f0.jpg class="rounded-circle shadow-4"style="width: 50px;" alt="Avatar" />
+                                <img src="https://telegra.ph/file/5af0d4cea12f4601e77f0.jpg" class="rounded-circle shadow-4"style="width: 50px;" alt="Avatar" />
                                 <span class="ml-2 d-none d-lg-inline small font-weight-bold"></span>
                             </a>
                         </li>
@@ -116,7 +107,7 @@
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-md-left font-weight-bold mb-2 text-primary">Rest-APis By Farisoffc</div>
+                                    <div class="text-md-left font-weight-bold mb-2 text-primary">Rest-APis</div>
                                     <div class="text-sm-left mb-0 font-weight-bold">Don't forget to use it.
                                     </div>
                                 </div>
@@ -126,33 +117,9 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="row mb-3">
+                       <div class="row mb-3">
                         
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card h-50">
-                                <div class="card-body">
-                                    <div class="row align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Response</div>
-                                            <div class="h5 mb-0 font-weight-bold" id="speed">Loading...</div>
-                                        <script>
-                                            setInterval(function() {
-                                            var xhr = new XMLHttpRequest();
-                                            xhr.open("GET", "https://zeltoria.site/api/status");
-                                            xhr.responseType = "json";
-                                            xhr.onload = () => document.getElementById('speed').innerText = '' + xhr.response.speed + '';
-                                            xhr.send()
-                                        }, 1000);
-                                        </script>
-                                        </div>
-                                        <div class="col-auto">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
+                     
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card h-50">
                                 <div class="card-body">
@@ -163,31 +130,6 @@
                                         </div>
                                         <div class="col-auto">
                                             <i class="fa fa-battery-full" ></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                     
-                         <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card h-50">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-uppercase mb-1">Status</div>
-                                            <div class="text-sm-left mb-0 font-weight-bold" id="statussites">Loading...</div>
-                                            <script>
-                                                setInterval(function() {
-                                                var xhr = new XMLHttpRequest();
-                                                xhr.open("GET", "https://zeltoria.site/api/status");
-                                                xhr.responseType = "json";
-                                                xhr.onload = () => document.getElementById('statussites').innerHTML = `<div class="text-sm-left mb-0 font-weight-bold" id="statussites"><i class="fa-solid fa-memory fa-sm"></i> ${xhr.response.memory}</div>`
-                                                xhr.send()
-                                            }, 1000);
-                                            </script>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fa-solid fa-circle-info fa-2xl"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -212,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    
+                    </div>
                     <div class="col-xl-3 col-md-6 mb-4">
                       <div class="card h-50 mb-4">
                          <div class="card-body">
@@ -220,8 +162,10 @@
                                 <div class="col mr-2">
                                     <div class="text-md-left font-weight-bold mb-2 text-primary">Thanks To</div>
                                     <div class="text-sm-left mb-0 font-weight-bold">Allah SWT</div>
-                                     <div class="text-sm-left mb-0 font-weight-bold">Farisoffc</div>
-                                  </div>
+                                     <div class="text-sm-left mb-0 font-weight-bold">Farisoffc
+                                    
+                               </div>      
+                                 </div>
                                 <div class="col-auto">
                               </div>
                             </div>
@@ -245,7 +189,7 @@
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         Created by
-                        <a href="https://github.com/FarisoffcOfc" target="_blank" style="color: rgb(224, 32, 7);">Farisoffc</a>
+                        <a href="https://farisstore.me" target="_blank" style="color: rgb(224, 32, 7);">Farisoffc</a>
                         </span>
                     </div>
                 </div>

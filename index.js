@@ -33,6 +33,8 @@ mess = {
 // Middleware untuk CORS
 app.use(cors());
 
+
+
 // Fungsi untuk ragBot
 async function ragBot(message) {
   try {
@@ -269,13 +271,34 @@ app.get('/api/instagram', async (req, res, nexts) => {
 app.get('/api/pinterest', async (req, res, nexts) => {
     const url = req.query.url;
     if (!url) return res.json(mess.noturl);
-    const response = await fetchJson(`https://api.junn4.my.id/download/pinterest?url=${url}`);
+    const response = await fetchJson(`https://api.betabotz.eu.org/api/download/pinterest?url=${url}`);
     res.json({
       status: true,
       creator: "FarzzX-",
       data: response.result
     });
 })
+app.get('/search/ytsearch', async (req, res, nexts) => {
+    const url = req.query.url;
+    if (!url) return res.json(mess.noturl);
+    const response = await fetchJson(`https://api.junn4.my.id/search/ytsearch?query=${url}`);
+    res.json({
+      status: true,
+      creator: "FarzzX-",
+      data: response.result
+    });
+})
+app.get('/api/tiktoksearch', async (req, res, nexts) => {
+    const url = req.query.url;
+    if (!url) return res.json(mess.noturl);
+    const response = await fetchJson(`https://api.junn4.my.id/search/tiktoksearch?query=lisa`);
+    res.json({
+      status: true,
+      creator: "FarzzX-",
+      data: response.result
+    });
+})
+
 // Handle 404 error
 app.use((req, res, next) => {
   res.status(404).send("Sorry can't find that!");
